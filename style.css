@@ -1,0 +1,425 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+* {
+    font-family: "Quicksand", sans-serif;
+}
+
+body {
+    margin: 0%;
+    padding: 0px;
+}
+
+header {
+    background: linear-gradient(to left, #00000079, transparent), url(home_bg.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 900px;
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px 120px;
+    overflow: hidden;
+    background-color: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+li {
+    float: left;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+li img {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 70px;
+}
+
+li a {
+    display: block;
+    text-align: center;
+    font-size: large;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    padding: 13px 15px;
+    text-decoration: none;
+}
+
+li a:hover {
+    border-bottom: 3px solid rgb(255, 200, 0);
+}
+
+header .text_div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 19%;
+}
+
+header h1 {
+    color: antiquewhite;
+    font-size: 45px;
+    margin-bottom: 0px;
+    font-weight: 600;
+}
+
+header p {
+    color: antiquewhite;
+    font-size: 17px;
+}
+
+header span {
+    color: rgb(255, 200, 0);
+}
+
+header input {
+    width: auto;
+    padding: 8px 25px;
+    font-size: medium;
+    border-radius: 10px;
+    border: solid white 2px;
+    background: none;
+    color: white;
+    margin-top: 20px;
+}
+
+header input:hover {
+    transition: all 0.4ms;
+    background: rgb(255, 200, 0);
+    color: rgb(255, 255, 255);
+}
+
+/*------food lover history & menu-------------------*/
+.food_lover_history {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6%;
+    text-align: center;
+    padding: 0% 10%;
+}
+
+.food_lover_history h1,
+.menu h1 {
+    color: rgb(37, 2, 69);
+    font-size: 40px;
+    margin-bottom: 0px;
+    font-weight: 600;
+}
+
+.food_lover_history p,
+.menu p {
+    color: rgb(148, 148, 148);
+}
+
+.the_history,
+.dishes {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+
+}
+
+.the_history p {
+    width: 90%;
+    text-align: start;
+    font-size: 18px;
+    margin: 0px;
+}
+
+.the_history input {
+    width: 150px;
+    font-size: medium;
+    border-radius: 10px;
+    padding: 6px 15px;
+    color: white;
+    background-color: rgb(37, 2, 69);
+    border: none;
+    margin: 5% 80% 0% 0%;
+}
+
+/*------------special_offers-------------*/
+.special_offers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6%;
+    text-align: center;
+    background: url(offer-background.jpg);
+    background-attachment: fixed;
+    padding: 4% 0%;
+    color: antiquewhite;
+}
+
+.special_offers h1 {
+    color: rgb(255, 200, 0);
+    font-size: 50px;
+    padding: 0%;
+    margin: 0px;
+    font-weight: 600;
+}
+
+.offers_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 4%;
+
+}
+
+.offers_container img {
+    width: 36%;
+}
+
+.offers_container div p {
+    font-size: small;
+    width: 80%;
+    margin-left: 14%;
+
+}
+
+.offers_container div h3 {
+    font-size: larger;
+
+}
+
+.offers_container div span {
+    color: rgb(255, 200, 0);
+    margin-left: 5px;
+    font-size: large;
+}
+
+/*------ menu-------------------*/
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4%;
+    text-align: center;
+}
+
+.dishes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dishes div {
+    display: flex;
+    align-items: center;
+    text-align: start;
+
+}
+
+.bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: start;
+    justify-content: center;
+}
+
+.div_bar {
+    margin-left: 100px;
+}
+
+
+.details {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+
+}
+
+
+.dishes span {
+    color: rgb(255, 200, 0);
+
+    font-size: large;
+}
+
+.dishes h3 {
+    color: rgb(37, 2, 69);
+    border-bottom: dotted 2px gray;
+    font-weight: 600;
+    width: 350px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.dishes p {
+    color: rgb(37, 2, 69);
+    margin: 0px;
+    font-size: 15px;
+    width: 310px;
+    margin-right: 35px;
+
+}
+
+.dishes img {
+    width: 90px;
+    margin-right: 5%;
+}
+
+.menu input {
+    border-radius: 15px;
+    background: rgb(255, 200, 0);
+    border: none;
+    padding: 7px 20px;
+    font-size: large;
+    margin-top: 30px;
+    color: aliceblue;
+    box-sizing: border-box;
+}
+
+.menu input:hover {
+   
+    border: solid 2px rgb(255, 200, 0);
+    background: none;
+    color: rgb(255, 200, 0);
+}
+
+/*---------- Meal times---------------*/
+.time_line{
+    background:linear-gradient( to left, rgba(255, 200, 0, 0.47),transparent),linear-gradient( to right, rgba(255, 200, 0, 0.355),transparent) ,url(daytime_bg.jpeg);
+    background-size: contain;
+    margin-top: 6%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    padding: 4% 10%;
+    color: aliceblue;
+}
+.time_line h3{
+font-size: 24px;
+font-weight: 600;
+margin-bottom: 0;
+}
+.time_line p{
+    font-size: small;
+    margin-top: 5px;
+}
+/*---------- food_gallary---------------*/
+.food_gallary{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url(offer-background.jpg);
+    padding: 5%;
+
+}
+.food_gallary h1{
+ font-size: 40px;
+ color: aliceblue;
+ font-weight: 600;
+}
+.food_gallary img{
+    width: 280px;
+    height: 200px;
+    border-radius: 20px;
+    margin: 15px;
+}
+/*-----------contact_form--------------*/
+.contact_form{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 7%;
+
+}
+.contact_form h1{
+    color: rgb(50, 50, 50);
+    font-weight: 600;
+    font-size: 30px;
+}
+.contact_form i{
+    color:rgb(255, 200, 0) ;
+    margin-right: 7px;
+}
+.contact_form p{
+   color: gray;
+   font-size: medium;
+}
+.icons_container i{
+    color: white;
+    background: rgb(50, 50, 50);
+    padding: 10px;
+    border-radius: 50%;
+   font-size: 23px;
+     align-items: center;
+}
+.icons_container i:hover{
+   background-color: rgb(255, 200, 0);
+   color:rgb(50, 50, 50) ;
+   
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin-top: 80px;
+}
+form input ,textarea{
+    width: 400px;
+    margin: 12px;
+    height: 40px;
+    padding: 5px;
+
+    background-color: rgba(254, 249, 219, 0.523);
+    border: none;
+}
+form input:focus,
+textarea:focus {
+  outline: none;
+}
+form input[type=submit]{
+    background-color:rgb(255, 200, 0) ;
+    float: left;
+    width: 150px;
+    color: aliceblue;
+    border-radius: 15px;
+    font-weight: 500px;
+    
+}
+form input[type=submit]:hover{
+    border: solid 2px rgb(255, 200, 0);
+    background: none;
+    color: rgb(255, 200, 0);
+}
+
+/*---------copyright------*/
+.copyright{
+    color: aliceblue;
+    background-color: rgb(50, 50, 50);
+   padding: 0.1%;
+   font-size: smaller;
+   display: flex;
+   justify-content: center;
+}
+/*--------media quairy--------*/
+@media(max-width:1024px){
+    body{
+        margin: 0%;
+    }
+    
+
+}
+@media(max-width:)
