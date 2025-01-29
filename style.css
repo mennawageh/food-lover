@@ -1,11 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
 * {
     font-family: "Quicksand", sans-serif;
 }
 
 body {
     margin: 0%;
-    padding: 0px;
+    padding: 0%;
+    width: 100%;
+    display: flexbox;
+    flex-wrap:wrap;
 }
 
 header {
@@ -13,7 +17,9 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     height: 900px;
-
+    overflow: hidden;
+    flex-grow: 1;
+  
 }
 
 ul {
@@ -25,7 +31,7 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    
 
 }
 
@@ -62,6 +68,7 @@ header .text_div {
     align-items: center;
     justify-content: center;
     margin-top: 19%;
+    text-align: center;
 }
 
 header h1 {
@@ -144,7 +151,7 @@ header input:hover {
     color: white;
     background-color: rgb(37, 2, 69);
     border: none;
-    margin: 5% 80% 0% 0%;
+    margin: 5% 80% 10% 0%;
 }
 
 /*------------special_offers-------------*/
@@ -289,15 +296,15 @@ header input:hover {
 }
 
 .menu input:hover {
-   
+
     border: solid 2px rgb(255, 200, 0);
     background: none;
     color: rgb(255, 200, 0);
 }
 
 /*---------- Meal times---------------*/
-.time_line{
-    background:linear-gradient( to left, rgba(255, 200, 0, 0.47),transparent),linear-gradient( to right, rgba(255, 200, 0, 0.355),transparent) ,url(daytime_bg.jpeg);
+.time_line {
+    background: linear-gradient(to left, rgba(255, 200, 0, 0.47), transparent), linear-gradient(to right, rgba(255, 200, 0, 0.355), transparent), url(daytime_bg.jpeg);
     background-size: contain;
     margin-top: 6%;
     display: flex;
@@ -307,17 +314,20 @@ header input:hover {
     padding: 4% 10%;
     color: aliceblue;
 }
-.time_line h3{
-font-size: 24px;
-font-weight: 600;
-margin-bottom: 0;
+
+.time_line h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 0;
 }
-.time_line p{
+
+.time_line p {
     font-size: small;
     margin-top: 5px;
 }
+
 /*---------- food_gallary---------------*/
-.food_gallary{
+.food_gallary {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -326,58 +336,69 @@ margin-bottom: 0;
     padding: 5%;
 
 }
-.food_gallary h1{
- font-size: 40px;
- color: aliceblue;
- font-weight: 600;
+
+.food_gallary h1 {
+    font-size: 40px;
+    color: aliceblue;
+    font-weight: 600;
 }
-.food_gallary img{
+
+.food_gallary img {
     width: 280px;
     height: 200px;
     border-radius: 20px;
     margin: 15px;
 }
+
 /*-----------contact_form--------------*/
-.contact_form{
+.contact_form {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     padding: 7%;
 
 }
-.contact_form h1{
+
+.contact_form h1 {
     color: rgb(50, 50, 50);
     font-weight: 600;
     font-size: 30px;
 }
-.contact_form i{
-    color:rgb(255, 200, 0) ;
+
+.contact_form i {
+    color: rgb(255, 200, 0);
     margin-right: 7px;
 }
-.contact_form p{
-   color: gray;
-   font-size: medium;
+
+.contact_form p {
+    color: gray;
+    font-size: medium;
 }
-.icons_container i{
+
+.icons_container i {
     color: white;
     background: rgb(50, 50, 50);
     padding: 10px;
     border-radius: 50%;
-   font-size: 23px;
-     align-items: center;
+    font-size: 23px;
+    align-items: center;
 }
-.icons_container i:hover{
-   background-color: rgb(255, 200, 0);
-   color:rgb(50, 50, 50) ;
-   
+
+.icons_container i:hover {
+    background-color: rgb(255, 200, 0);
+    color: rgb(50, 50, 50);
+
 }
-form{
+
+form {
     display: flex;
     flex-direction: column;
     width: 400px;
     margin-top: 80px;
 }
-form input ,textarea{
+
+form input,
+textarea {
     width: 400px;
     margin: 12px;
     height: 40px;
@@ -386,40 +407,148 @@ form input ,textarea{
     background-color: rgba(254, 249, 219, 0.523);
     border: none;
 }
+
 form input:focus,
 textarea:focus {
-  outline: none;
+    outline: none;
 }
-form input[type=submit]{
-    background-color:rgb(255, 200, 0) ;
+
+form input[type=submit] {
+    background-color: rgb(255, 200, 0);
     float: left;
     width: 150px;
     color: aliceblue;
     border-radius: 15px;
     font-weight: 500px;
-    
+
 }
-form input[type=submit]:hover{
+
+form input[type=submit]:hover {
     border: solid 2px rgb(255, 200, 0);
     background: none;
     color: rgb(255, 200, 0);
 }
 
 /*---------copyright------*/
-.copyright{
+.copyright {
     color: aliceblue;
     background-color: rgb(50, 50, 50);
-   padding: 0.1%;
-   font-size: smaller;
-   display: flex;
-   justify-content: center;
+    padding: 0.1%;
+    font-size: smaller;
+    display: flex;
+    justify-content: center;
 }
+
 /*--------media quairy--------*/
-@media(max-width:1024px){
-    body{
+@media(max-width:1024px) {
+    body {
         margin: 0%;
     }
-    
+
+    header h1 {
+    font-size: 35px;
+    }
+
+    header p {
+     font-size: 11px;
+    }
+    .the_history {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .dishes {
+        display: flex;
+            flex-direction:column ;
+            align-items: center;
+    }
+    .div_bar {
+        margin-left:0px;
+    }
 
 }
-@media(max-width:)
+@media(max-width:645px){
+    body{
+        margin: 0px;
+    }
+   
+    .contact_form{
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+       
+
+    }
+    .the_history img{
+        width: 100%;
+    }
+    .dishes h3 {
+       
+    
+        font-weight: 600;
+        width: 250px;
+        
+    
+    }
+    
+    .dishes p {
+       
+        font-size: 11px;
+        width: 210px;
+        margin-right: 20px;
+    
+    }
+    
+    .dishes img {
+        width: 70px;
+        margin-right: 5%;
+    }
+    
+    .food_gallary div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    form {
+        width: 300px;
+        margin-top: 80px;
+    }
+    
+    form input,
+    textarea {
+        width: 300px;
+        margin: 7px;
+        height: 40px;
+        padding: 5px;
+    
+        background-color: rgba(254, 249, 219, 0.523);
+        border: none;
+    }
+    .time_line {
+
+        background-size: contain;
+        margin-top: 6%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+        padding: 4% 10%;
+        color: aliceblue;
+    }
+    .time_line img{
+        width: 50px;
+        height: 50px;
+    }
+    .time_line h3 {
+        font-size: 15px;
+        font-weight: 600;
+        margin-bottom: 0;
+    }
+    
+    .time_line p {
+        font-size: small;
+        margin-top: 5px;
+    }
+}
